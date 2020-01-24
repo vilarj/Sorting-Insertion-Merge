@@ -1,12 +1,12 @@
 
 public class MergeSort <T extends Comparable <? super T>>
 {
-    public <T extends Comparable<T>> MergeSort(T[] arr)
+    public MergeSort(T[] arr)
     {
         mergeSort(arr, 0, arr.length - 1);
     }
 
-    static <T extends Comparable<T>> void merge (Comparable[] arr,int p, int q, int r) {
+    static void merge (Comparable[] arr,int p, int q, int r) {
         int j = q;
         int i = p;
         int t = 0;
@@ -41,7 +41,7 @@ public class MergeSort <T extends Comparable <? super T>>
         }
     }
 
-    private <T extends Comparable<T>> void mergeSort(T[] arr, int left, int right) {
+    private void mergeSort(T[] arr, int left, int right) {
         if(right - left <= 4) {
             Insertion_Sort sort = new Insertion_Sort(arr);
         }
