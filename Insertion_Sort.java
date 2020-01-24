@@ -1,5 +1,5 @@
 
-public class Insertion_Sort <T extends Comparable> {
+public class Insertion_Sort <T extends Comparable <? super T> > {
     public Insertion_Sort (T[] list) {
         Insertion (list);
     }
